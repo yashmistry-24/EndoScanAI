@@ -1,7 +1,5 @@
 # EndoScanAI: Histopathological Image Classification for Endometrial Tissues
 
-![EndoScanAI Pipeline](assets/pipeline.png) *Example workflow diagram - replace with your actual pipeline visualization*
-
 ## Overview
 
 EndoScanAI is a deep learning system designed to classify histopathological images of endometrial tissues into four clinically relevant categories:
@@ -35,3 +33,29 @@ The model was trained on a proprietary dataset containing:
 - 7 distinct histological classes
 - Nested folder structure preserving tissue subtypes
 - Carefully curated histopathology slides
+
+
+## Installation
+
+### Prerequisites
+- Python 3.8-3.10
+- pip ≥20.0
+- (Optional) CUDA 11.8 for GPU acceleration
+
+### Quick Start
+```bash
+# Clone repository
+git clone https://github.com/yourusername/EndoScanAI.git
+cd EndoScanAI
+
+# Create virtual environment (recommended)
+python -m venv env
+source env/bin/activate  # Linux/Mac
+# OR
+.\env\Scripts\activate   # Windows
+
+# Install core requirements
+pip install -r requirements.txt
+
+# Install with optional dependencies
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
